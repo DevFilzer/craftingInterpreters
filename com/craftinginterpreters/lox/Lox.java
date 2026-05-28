@@ -7,7 +7,6 @@ import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
-import java.util.Scanner;
 
 public class Lox {
 
@@ -54,7 +53,7 @@ public class Lox {
 
     }
 
-    static void error(int line, String where, String message) {
+    static void error(int line, String message) {  
         report(line, "", message);
     }
 
